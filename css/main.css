@@ -2,6 +2,46 @@ body{
     /* background-color: black; */
     /* color: pink; */
 }
+/* Header */
+.header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.toggle{
+    position: relative;
+    width: 35px;
+    height: 25px;
+    /* background-color: red; */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.toggle--active{
+    
+}
+
+.toggle::after, .toggle::before, .toggle > span{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.788);
+    border-radius: 4px;
+}
+.toggle::before{
+    top: 0;
+}
+.toggle > span{
+    margin: auto;
+}
+.toggle::after{
+    bottom: 0;
+}
+
 
 .link{
     color: red;
